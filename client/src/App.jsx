@@ -5,18 +5,21 @@ const App = () => {
     <div className="relative h-screen">
       {/* Background Video */}
       <video
-        className="absolute inset-0 object-cover w-full h-full"
+        className="absolute inset-0 z-15 object-cover w-full h-full"
         src="/cover.mp4"
+        muted
         autoPlay
         loop
-        muted
-      ></video>
+        playsInline // Ensures video plays inline on mobile devices
+      >
+        Your browser does not support the video tag.
+      </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-white">
         <h1 className="text-5xl md:text-6xl font-bold text-center">
           Travelling is fun. Together.
         </h1>
@@ -25,21 +28,17 @@ const App = () => {
           everything from planning to execution. It's as simple as that!
         </p>
         <div className="mt-8 flex space-x-4">
-          <button
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition"
-          >
+          <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
             Learn More →
           </button>
-          <button
-            className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition"
-          >
+          <button className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition">
             Plan Now →
           </button>
         </div>
       </div>
 
       {/* Navbar */}
-      <nav className="absolute top-0 w-full flex items-center justify-around px-8 py-4">
+      <nav className="absolute top-0 w-full flex items-center justify-around px-8 py-4 z-30">
         <div className="text-2xl font-bold text-white">GUMOHH!</div>
         <ul className="flex space-x-6 text-white font-medium">
           <li className="hover:underline cursor-pointer">About Us</li>
