@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router"; // Fix: Import from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
@@ -15,16 +15,17 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-transparent shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-gray-800">
+        <Link to="/" className="text-2xl font-bold text-white">
           GUMA
         </Link>
         {/* Hamburger Menu Icon for Mobile */}
         <button
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
+          aria-label="Toggle menu"
         >
           <svg
             className="w-6 h-6"
@@ -46,26 +47,17 @@ const Header = () => {
         <nav className="hidden md:flex md:items-center">
           <ul className="flex space-x-6">
             <li>
-              <Link
-                to="/about"
-                className="text-gray-800 hover:text-blue-500"
-              >
+              <Link to="/about" className="text-white hover:text-blue-500">
                 About Us
               </Link>
             </li>
             <li>
-              <Link
-                to="/gallery"
-                className="text-gray-800 hover:text-blue-500"
-              >
+              <Link to="/gallery" className="text-white hover:text-blue-500">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="text-gray-800 hover:text-blue-500"
-              >
+              <Link to="/contact" className="text-white hover:text-blue-500">
                 Contact Us
               </Link>
             </li>
