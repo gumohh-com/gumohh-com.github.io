@@ -42,8 +42,8 @@ const Home = () => {
           </div>
           <FounderSection />
           <JourneySection />
-          <div className="flex flex-col items-center justify-center p-6 bg-gray-100 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+          <div className="flex flex-col items-center justify-center p-6 bg-black text-white rounded-lg shadow-md">
+              <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
               <p className="text-center mb-4">
                   Please feel free to reach out to us if you have any questions or want to start planning a group trip with us.
               </p>
