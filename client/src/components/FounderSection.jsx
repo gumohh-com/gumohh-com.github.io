@@ -4,8 +4,8 @@ const FounderSection = () => {
     return (
         <div className="bg-black pb-14">
             <p className="flex flex-col items-center text-white">
-                <h3 className="p-8 text-2xl">Meet Our Team</h3>
-                <div className="max-w-96 text-center">We are a pair of friends passionate about traveling and sharing the love of travelling with others through this company.</div>
+                <h3 className="p-8 text-4xl font-bold">Meet Our Team</h3>
+                <div className="max-w-80 text-center">We are a pair of friends passionate about traveling and sharing the love of travelling with others through this company.</div>
             </p>
             <div className="flex justify-around flex-wrap">
                 <FounderCard info={founderList[0]} />

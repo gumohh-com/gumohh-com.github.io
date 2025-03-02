@@ -15,11 +15,11 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-white">
-          GUMA
+          GUMOHH!
         </Link>
         {/* Hamburger Menu Icon for Mobile */}
         <button
@@ -47,17 +47,17 @@ const Header = () => {
         <nav className="hidden md:flex md:items-center">
           <ul className="flex space-x-6">
             <li>
-              <Link to="/about" className="text-white hover:text-blue-500">
+              <Link to="/about" className="text-white hover:text-blue-500 font-medium">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="text-white hover:text-blue-500">
+              <Link to="/gallery" className="text-white hover:text-blue-500 font-medium">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-white hover:text-blue-500">
+              <Link to="/contact" className="text-white hover:text-blue-500 font-medium">
                 Contact Us
               </Link>
             </li>
