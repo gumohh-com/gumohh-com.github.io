@@ -18,9 +18,17 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-white">
-          GUMOHH!
-        </Link>
+        <div className="flex justify-around w-72 items-center">
+          <Link to="/" className="text-2xl font-bold text-white">
+            <img src="/gumooh-1.png" className="w-16 h-auto rounded-full" />
+          </Link>
+          <div>
+            <Link>
+              <p className="text-2xl font-bold text-white">GUMOHH!</p>
+            </Link>
+            <p className="text-white ">Imagine a new adventure.</p>
+          </div>
+        </div>
         {/* Hamburger Menu Icon for Mobile */}
         <button
           className="md:hidden text-white focus:outline-none"
