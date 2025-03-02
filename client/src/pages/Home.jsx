@@ -5,7 +5,7 @@ import JourneySection from "../components/JourneySection";
 const Home = () => {
   return (
     <>
-          <div className="relative h-screen">
+          <div className="relative h-screen flex justify-center">
               {/* Background Video */}
               <video
                   className="absolute inset-0 z-20 object-cover w-full h-full"
@@ -22,8 +22,8 @@ const Home = () => {
               <div className="absolute inset-0 bg-black opacity-65 z-20"></div>
 
               {/* Content */}
-              <div className="relative z-20 flex flex-col items-center justify-center h-full text-white">
-                  <h1 className="text-5xl md:text-6xl font-bold text-center">
+              <div className="relative z-20 flex flex-col items-center justify-center h-full w-1/2 text-blue-100">
+                  <h1 className="text-6xl md:text-5xl font-bold text-center">
                       Travelling is fun. Together.
                   </h1>
                   <p className="mt-4 text-lg md:text-xl text-center max-w-2xl">
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
           <FounderSection />
           <JourneySection />
-          <div className="flex flex-col items-center justify-center p-6 bg-black text-white rounded-lg shadow-md">
+          <div className="flex flex-col items-center justify-center p-6 bg-black text-white shadow-md">
               <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
               <p className="text-center mb-4">
                   Please feel free to reach out to us if you have any questions or want to start planning a group trip with us.
@@ -65,6 +65,9 @@ const Home = () => {
                   </a>
               </div>
           </div>
+
+          <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-1 w-full"></div>
+
           <Footer />
     </>
   )

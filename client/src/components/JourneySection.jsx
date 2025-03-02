@@ -4,10 +4,10 @@ const JourneySection = () => {
         <div className="flex flex-col items-center bg-[url('/banner-03.jpg')] bg-cover bg-center min-h-96 rounded-2xl w-full mb-8">
             <h4 className="text-4xl text-blue-50 font-bold p-8 text-center">Time to Start Your Journey</h4>
             <p className="text-blue-50 text-center max-w-72">Embrace the chance to discover diverse landscapes, taste new cuisines, and connect with people from different backgrounds.</p>
-            <div className="bg-black rounded-2xl p-8 m-8 flex flex-wrap w-sm justify-between">
-                <div className="max-w-32 text-white font-bold">Start Your Journey Today!</div>
+            <div className="bg-black rounded-2xl p-8 m-8 flex justify-between">
+                <div className="max-w-32 text-white font-bold flex flex-wrap">Start Your Journey Today!</div>
                 <div><button className="p-4 bg-gradient-to-r from-purple-600 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
-                    BOOK A TRIP
+                    BOOK A TRIP →
                 </button>
                 </div>
             </div> 
