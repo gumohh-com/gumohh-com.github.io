@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router"
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   )
 };
 

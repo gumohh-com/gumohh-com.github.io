@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import FounderSection from "../components/FounderSection";
 import JourneySection from "../components/JourneySection";
+import ContentSection from "../components/Content";
 
 const Home = () => {
   return (
@@ -40,8 +41,14 @@ const Home = () => {
                   </div>
               </div>
           </div>
+        
+          <ContentSection/>
+
+          <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-0.5 w-full"></div>
+          
           <FounderSection />
           <JourneySection />
+
           <div className="flex flex-col items-center justify-center p-6 bg-black text-white shadow-md">
               <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
               <p className="text-center mb-4">
@@ -66,7 +73,7 @@ const Home = () => {
               </div>
           </div>
 
-          <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-1 w-full"></div>
+          <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-0.5 w-full"></div>
 
           <Footer />
     </>
