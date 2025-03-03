@@ -6,6 +6,7 @@ const Footer = () => {
                 <div className="flex flex-col items-start">
                     <h1 className="text-2xl font-bold">GUMOHH!</h1>
                     <p className="mt-4">© 2025 GUMOHH, All rights reserved.</p>
+
                 </div>
 
                 {/* About Section */}
