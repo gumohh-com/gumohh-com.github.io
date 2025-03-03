@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex justify-around w-72 items-center">
@@ -132,7 +132,7 @@ const Header = () => {
           )}
         </AnimatePresence>
       </div>
-    </header>
+    </div>
   );
 };
 

@@ -12,32 +12,34 @@ const JourneySection = () => {
                 </div>
             </div> 
         </div>
-        <div className="flex justify-between">
-      {/* Contact Support Card */}
-      <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-xl p-8 text-center w-1/2 transform transition-all hover:scale-105 hover:shadow-xl">
-        <h2 className="text-2xl font-bold mb-6 text-blue-800">Contact Support</h2>
-        <p className="text-gray-700 mb-6 leading-relaxed">
-          If you have any questions, feel free to contact our support, and we will get back to you within 24 hours.
-        </p>
-        <a
-          href="mailto:gumohh.com@gmail.com"
-          className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105"
-        >
-          gumohh.com@gmail.com
-        </a>
-      </div>
 
-      {/* Travel Stories Card */}
-      <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-xl shadow-xl p-8 text-center w-1/2 mx-4 transform transition-all hover:scale-105 hover:shadow-xl">
-        <h2 className="text-2xl font-bold mb-6 text-green-800">Travel Stories</h2>
-        <p className="text-gray-700 mb-6 leading-relaxed">
-          Whether you’re a seasoned traveler or planning your next trip, these tales are sure to ignite your passion for adventure.
-        </p>
-        <button className="bg-gradient-to-r from-gray-500 to-gray-500 text-white px-6 py-3 rounded-full hover:from-green-600 hover:to-yellow-600 transition-all transform hover:scale-105">
-          Read 👍
-        </button>
-      </div>
-    </div>
+  <div className="flex  gap-6 flex-wrap justify-center">
+  {/* Contact Support Card */}
+  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl">
+    <h2 className="text-2xl font-bold mb-6 text-blue-800">Contact Support</h2>
+    <p className="text-gray-700 mb-6 leading-relaxed">
+      If you have any questions, feel free to contact our support, and we will get back to you within 24 hours.
+    </p>
+    <a
+      href="mailto:gumohh.com@gmail.com"
+      className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105"
+    >
+      gumohh.com@gmail.com
+    </a>
+  </div>
+
+  {/* Travel Stories Card */}
+  <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl">
+    <h2 className="text-2xl font-bold mb-6 text-green-800">Travel Stories</h2>
+    <p className="text-gray-700 mb-6 leading-relaxed">
+      Whether you’re a seasoned traveller or planning your next trip, these tales are sure to ignite your passion for adventure.
+    </p>
+    <button className="bg-gradient-to-r from-gray-500 to-gray-500 text-white px-6 py-3 rounded-full hover:from-green-600 hover:to-yellow-600 transition-all transform hover:scale-105">
+      Read 👍
+    </button>
+  </div>
+</div>
+
       
     </section>
   );
