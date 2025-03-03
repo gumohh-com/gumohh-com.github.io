@@ -19,7 +19,7 @@ const Contact = () => {
       [name]: value,
     }));
   };
-
+  //TODO: decide what to do with handleSubmit
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
@@ -50,7 +50,7 @@ const Contact = () => {
             Thank you for your message!
           </motion.p>
         )}
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form action="https://formspree.io/f/xyzkrblr" method="POST" className="space-y-4">
           <div>
             <label htmlFor="firstName" className="block font-medium text-gray-300 mb-1">
               First Name

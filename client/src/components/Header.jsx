@@ -23,7 +23,7 @@ const Header = () => {
             <img src="/gumooh-1.png" className="w-16 h-auto rounded-full" />
           </Link>
           <div>
-            <Link>
+            <Link to="/">
               <p className="text-2xl font-bold text-white">GUMOHH!</p>
             </Link>
             <p className="text-white ">Imagine a new adventure.</p>
