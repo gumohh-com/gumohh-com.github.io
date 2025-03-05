@@ -3,7 +3,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router"
+import { Routes, Route } from "react-router";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
-  )
+  );
 };
 
 export default App;

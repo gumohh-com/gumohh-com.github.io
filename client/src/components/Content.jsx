@@ -1,13 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const destinations = [
-  'Shimla', 'Manali', 'Amritsar', 'Agra', 'Nainital', 
-  'Dharamshala', 'Kullu', 'Ranthambore', 'Haridwar', 'Srinagar', 
-  'Tawang', 'Mcleodganj', 'Khajjiar', 'Almora', 'Mussoorie',
-  'Jaipur', 'Goa', 'Kerala', 'Varanasi', 'Rishikesh', 
-  'Andaman Islands', 'Leh-Ladakh', 'Mysore', 'Darjeeling', 'Hampi'
+  "Shimla",
+  "Manali",
+  "Amritsar",
+  "Agra",
+  "Nainital",
+  "Dharamshala",
+  "Kullu",
+  "Ranthambore",
+  "Haridwar",
+  "Srinagar",
+  "Tawang",
+  "Mcleodganj",
+  "Khajjiar",
+  "Almora",
+  "Mussoorie",
+  "Jaipur",
+  "Goa",
+  "Kerala",
+  "Varanasi",
+  "Rishikesh",
+  "Andaman Islands",
+  "Leh-Ladakh",
+  "Mysore",
+  "Darjeeling",
+  "Hampi",
 ];
-
 
 const ContentSection = () => {
   const [currentDestination, setCurrentDestination] = useState(destinations[0]);
@@ -22,21 +41,28 @@ const ContentSection = () => {
   }, []);
 
   return (
-    <div className="w-full h-[50vh] bg-black flex justify-center items-center" >
+    <div className="w-full h-[50vh] bg-black flex justify-center items-center">
       <div className="text-center mt-0 p-0">
-        <h5 className="text-white text-4xl font-semibold drop-shadow-md">Welcome To India</h5>
+        <h5 className="text-white text-4xl font-semibold drop-shadow-md">
+          Welcome To India
+        </h5>
         <h1 className="text-white text-5xl font-semibold drop-shadow-md mt-2">
-          Visit <span className="text-orange-500 drop-shadow-md text-6xl">{currentDestination}</span>
+          Visit{" "}
+          <span className="text-orange-500 drop-shadow-md text-6xl">
+            {currentDestination}
+          </span>
         </h1>
         <p className="text-white font-semibold mt-2 mb-8 text-xl">
-         See the world with open eyes
-      </p>
+          See the world with open eyes
+        </p>
 
-        <a href="#book" className="px-4 py-2 bg-orange-500 text-black tracking-widest font-bold rounded-md transition duration-500 hover:bg-blue-500 hover:text-white">
+        <a
+          href="#book"
+          className="px-4 py-2 bg-orange-500 text-black tracking-widest font-bold rounded-md transition duration-500 hover:bg-blue-500 hover:text-white"
+        >
           Book Place
         </a>
       </div>
-      
     </div>
   );
 };
