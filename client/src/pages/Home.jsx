@@ -23,8 +23,8 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-65 z-20"></div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center justify-center h-full w-1/2 text-blue-100">
-          <h1 className="text-6xl md:text-5xl font-bold text-center">
+        <div className="relative z-20 flex flex-col items-center justify-center h-full w-1/2 text-blue-100 mt-14">
+          <h1 className="text-3xl md:text-5xl font-bold text-center">
             Travelling is fun. Together.
           </h1>
           <p className="mt-4 text-lg md:text-xl text-center max-w-2xl">
