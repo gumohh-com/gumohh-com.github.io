@@ -31,11 +31,11 @@ const Home = () => {
                       Reimagine group travel with us. You imagine the trip and we manage
                       everything from planning to execution. It's as simple as that!
                   </p>
-                  <div className="mt-8 flex space-x-4">
-                      <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
+                  <div className="flex flex-wrap gap-x-4 gap-y-4 mt-8 justify-center items-center">
+                      <button className="px-6 py-3 min-w-36 w-40 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
                           Learn More →
                       </button>
-                      <button className="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition">
+                      <button className="px-6 py-3 min-w-36 w-40 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition">
                           Plan Now →
                       </button>
                   </div>
