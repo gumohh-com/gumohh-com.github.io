@@ -3,10 +3,15 @@ const Footer = () => {
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         {/* Logo Section */}
-        <div className="flex flex-col items-start">
+        <div className="flex items-start justify-between flex-wrap">
+          <div className="flex flex-col items-start">
           <h1 className="text-2xl font-bold">GUMOHH!</h1>
           <p className="mt-4">© 2025 GUMOHH, All rights reserved.</p>
+          </div>
+          <img src="/gumooh-1.png"className="w-16 mt-4 h-auto rounded-full"/>
         </div>
+          
+        
 
         {/* About Section */}
         <div>
