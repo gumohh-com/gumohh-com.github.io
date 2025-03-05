@@ -10,7 +10,11 @@ const Header = () => {
   };
 
   const menuVariants = {
-    open: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } },
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 300, damping: 24 },
+    },
     closed: { opacity: 0, y: -20, transition: { duration: 0.2 } },
   };
 
@@ -55,17 +59,26 @@ const Header = () => {
         <nav className="hidden md:flex md:items-center">
           <ul className="flex space-x-6">
             <li>
-              <Link to="/about" className="text-white hover:text-blue-500 font-medium">
+              <Link
+                to="/about"
+                className="text-white hover:text-blue-500 font-medium"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="text-white hover:text-blue-500 font-medium">
+              <Link
+                to="/gallery"
+                className="text-white hover:text-blue-500 font-medium"
+              >
                 Gallery
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-white hover:text-blue-500 font-medium">
+              <Link
+                to="/contact"
+                className="text-white hover:text-blue-500 font-medium"
+              >
                 Contact Us
               </Link>
             </li>
