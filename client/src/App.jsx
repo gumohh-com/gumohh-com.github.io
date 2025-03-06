@@ -1,4 +1,5 @@
-import Header from "./components/Header"; // Import the Header component
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
