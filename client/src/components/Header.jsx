@@ -18,8 +18,10 @@ const Header = () => {
     closed: { opacity: 0, y: -20, transition: { duration: 0.2 } },
   };
 
+  const navbarStyle = !isMenuOpen? "fixed top-0 left-0 right-0 z-50 bg-transparent" : "fixed top-0 left-0 right-0 z-50 bg-black/50";
+
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <div className={navbarStyle}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex justify-around w-72 items-center">
@@ -97,7 +99,7 @@ const Header = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg"
+              className="md:hidden absolute top-24 left-0 right-0 bg-black/50 shadow-lg -z-20"
               initial="closed"
               animate="open"
               exit="closed"
@@ -107,7 +109,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/about"
-                    className="block text-gray-800 hover:text-blue-500"
+                    className="block text-white hover:text-blue-500"
                     onClick={toggleMenu}
                   >
                     About Us
@@ -116,7 +118,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/gallery"
-                    className="block text-gray-800 hover:text-blue-500"
+                    className="block text-white hover:text-blue-500"
                     onClick={toggleMenu}
                   >
                     Gallery
@@ -125,7 +127,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/contact"
-                    className="block text-gray-800 hover:text-blue-500"
+                    className="block text-white hover:text-blue-500"
                     onClick={toggleMenu}
                   >
                     Contact Us
@@ -134,7 +136,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/plan-now"
-                    className="block px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transition hover:from-pink-600 hover:to-purple-600"
+                    className="block px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-500 text-white font-semibold rounded-lg shadow-md transition hover:from-pink-600 hover:to-purple-600"
                     onClick={toggleMenu}
                   >
                     PLAN NOW
