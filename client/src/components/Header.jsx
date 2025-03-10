@@ -105,7 +105,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/plan-now"
+                to="/contact"
                 className="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transition hover:from-pink-600 hover:to-purple-600"
               >
                 PLAN NOW

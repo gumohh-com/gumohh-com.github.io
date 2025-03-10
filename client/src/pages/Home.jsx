@@ -77,7 +77,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-0.5 w-full"></div>
+      
     </>
   );
 };
