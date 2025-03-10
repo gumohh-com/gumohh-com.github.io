@@ -1,6 +1,6 @@
 const JourneySection = () => {
   return (
-    <section className="p-16 bg-black">
+    <section className="p-8 bg-black">
       <div className="flex flex-col items-center bg-[url('/banner-03.jpg')] bg-cover bg-center min-h-96 rounded-2xl w-full mb-8">
         <h4 className="text-4xl text-blue-50 font-bold p-8 text-center">
           Time to Start Your Journey
