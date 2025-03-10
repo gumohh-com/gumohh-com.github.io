@@ -70,13 +70,21 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex md:items-center">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-5">
             <li>
               <Link
                 to="/about"
                 className="text-white hover:text-blue-500 font-medium"
               >
                 About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs"
+                className="text-white hover:text-blue-500 font-medium"
+              >
+                Blogs
               </Link>
             </li>
             <li>
@@ -124,6 +132,15 @@ const Header = () => {
                     onClick={toggleMenu}
                   >
                     About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/blogs"
+                    className="block text-white hover:text-blue-500"
+                    onClick={toggleMenu}
+                  >
+                    Blogs
                   </Link>
                 </li>
                 <li>
