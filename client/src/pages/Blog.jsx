@@ -10,13 +10,13 @@ const Blog = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black md:pt-24">
       {/* Banner Image */}
-      <div className="w-full h-64 sm:h-96 overflow-hidden">
+      <div className="w-full h-64 sm:h-96 overflow-hidden flex justify-center items-center">
         <img
           src={blog.image}
           alt={blog.title}
-          className="w-full h-full object-cover"
+          className="w-2xl "
         />
       </div>
 
