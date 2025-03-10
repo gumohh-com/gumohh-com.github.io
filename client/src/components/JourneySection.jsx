@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const JourneySection = () => {
   return (
     <section className="p-8 bg-black">
@@ -15,7 +17,9 @@ const JourneySection = () => {
           </div>
           <div>
             <button className="p-4 space-x-1 bg-gradient-to-r from-purple-600 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
-              BOOK A TRIP →
+              <Link to="/contacts">
+                BOOK A TRIP →
+              </Link>
             </button>
           </div>
         </div>
@@ -37,6 +41,12 @@ const JourneySection = () => {
           >
             gumohh.com@gmail.com
           </a>
+          <p
+            href="mailto:gumohh.com@gmail.com"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 min-w-64 mt-2"
+          >
+            +91 78499 00893
+          </p>
         </div>
 
         {/* Travel Stories Card */}
@@ -49,7 +59,9 @@ const JourneySection = () => {
             these tales are sure to ignite your passion for adventure.
           </p>
           <button className="bg-gradient-to-r from-gray-500 to-gray-500 text-white px-6 py-3 rounded-full hover:from-green-600 hover:to-yellow-600 transition-all transform hover:scale-105">
-            Read 👍
+            <Link to="/blogs">
+              Read 👍
+            </Link>
           </button>
         </div>
       </div>

@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
 import FounderSection from "../components/FounderSection";
 import JourneySection from "../components/JourneySection";
 import ContentSection from "../components/Content";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -33,10 +33,14 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-4 mt-8 justify-center items-center">
             <button className="px-6 py-3 min-w-36 w-40 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
+              <Link to="/blogs">
               Learn More →
+              </Link>
             </button>
             <button className="px-6 py-3 min-w-36 w-40 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition">
+              <Link to="/contact">
               Plan Now →
+              </Link>
             </button>
           </div>
         </div>
@@ -58,18 +62,18 @@ const Home = () => {
         <p className="text-center mb-4">Thanks for visiting!</p>
         <div className="flex flex-col items-center space-y-2">
           <a
-            href="https://instagram.com/gunrohh_official"
+            href="https://www.instagram.com/gumohh.comm/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
           >
-            Instagram: @gunrohh_official
+            Instagram: @gumohh.comm
           </a>
           <a
-            href="mailto:gunrohh.com@gmail.com"
+            href="mailto:gumohh.com@gmail.com"
             className="text-blue-600 hover:text-blue-800"
           >
-            Email: gunrohh.com@gmail.com
+            Email: gumohh.com@gmail.com
           </a>
         </div>
       </div>
