@@ -13,7 +13,7 @@ const Blogs = () => {
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-48 object-cover rounded-t-lg mb-4"
+                className="w-full h-48 md:h-108 object-cover rounded-t-lg mb-4"
               />
               <h2 className="text-2xl font-semibold text-white mb-2">{blog.title}</h2>
               <p className="text-white mb-4">{blog.description}</p>
