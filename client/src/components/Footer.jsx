@@ -45,18 +45,18 @@ const Footer = () => {
 
             {/* Navigation Links */}
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center">
-              <a href="/contact" className="hover:text-gray-400">
+              <Link to="/contact" className="hover:text-gray-400">
                 Contact Us
-              </a>
-              <a href="/about" className="hover:text-gray-400">
+              </Link>
+              <Link to="/about" className="hover:text-gray-400">
                 About Us
-              </a>
-              <a href="/gallery" className="hover:text-gray-400">
+              </Link>
+              <Link to="/gallery" className="hover:text-gray-400">
                 Gallery
-              </a>
-              <a href="/blogs" className="hover:text-gray-400">
+              </Link>
+              <Link to="/blogs" className="hover:text-gray-400">
                 Blogs
-              </a>
+              </Link>
             </div>
           </div>
 
