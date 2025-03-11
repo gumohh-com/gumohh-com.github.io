@@ -17,7 +17,7 @@ const JourneySection = () => {
           </div>
           <div>
             <button className="p-4 space-x-1 bg-gradient-to-r from-purple-600 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
-              <Link to="/contacts">
+              <Link to="/contact">
                 BOOK A TRIP →
               </Link>
             </button>
