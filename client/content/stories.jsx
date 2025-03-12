@@ -2,8 +2,8 @@ const stories = [
   {
     id: 1,
     title: "A Trip to Manali with Poornima University Students",
-    description: "Experience of the serene beauty of Manalu with the enthusiastic students of Poornima University.",
-    content: "Manali, an unmathched place with serne beauty offers mesmerizing landscapes, snow-capped mountains, and a sense of tranquility. The students of Poornima University embarked on a memorable trip to this enchanting destination. The journey was filled with laughter, adventure, and bonding moments. From exploring the local culture to indulging in thrilling activities like paragliding and river rafting, every moment was a treasure. The highlight of the trip was the visit to Solang Valley, where students experienced the thrill of snow sports and created unforgettable memories. This trip not only provided a break from academics but also strengthened friendships and fostered a sense of community among the students.",
+    description: "Experience of the serene beauty of Manali with the enthusiastic students of Poornima University.",
+    content: "Manali, an unmathched place with serne beauty that offers mesmerizing landscapes, snow-capped mountains, and a sense of tranquility. The students of Poornima University embarked on a memorable trip to this enchanting destination. The journey was filled with laughter, adventure, and bonding moments. From exploring the local culture to indulging in thrilling activities like paragliding and river rafting, every moment was a treasure. The highlight of the trip was the visit to Solang Valley, where students experienced the thrill of snow sports and created unforgettable memories. This trip not only provided a break from academics but also strengthened friendships and fostered a sense of community among the students.",
     image: "/g9.jpeg", // Thumbnail and banner image
   },
   {
