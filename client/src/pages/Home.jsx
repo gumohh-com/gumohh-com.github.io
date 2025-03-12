@@ -1,7 +1,9 @@
 import FounderSection from "../components/FounderSection";
-import JourneySection from "../components/JourneySection";
+import JourneySection from "../components/ReachSection";
 import ContentSection from "../components/Content";
-import { Link } from "react-router";
+import { NoHoverNormalButton, NoHoverInvertedButton } from "../components/CustomButtons";
+import ReachSection from "../components/ReachSection";
+import GradientDivider from "../components/OtherElements";
 
 const Home = () => {
   return (
@@ -32,28 +34,22 @@ const Home = () => {
             everything from planning to execution. It's as simple as that!
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-4 mt-8 justify-center items-center">
-            <button className="px-6 py-3 min-w-36 w-40 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
-              <Link to="/blogs">
-              Learn More →
-              </Link>
-            </button>
-            <button className="px-6 py-3 min-w-36 w-40 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-lg shadow-md transition">
-              <Link to="/contact">
-              Plan Now →
-              </Link>
-            </button>
+            <NoHoverNormalButton to="/stories">Learn More</NoHoverNormalButton>
+            <NoHoverInvertedButton to="/contact">Plan Now</NoHoverInvertedButton>
           </div>
         </div>
       </div>
 
+      <GradientDivider />
+
       <ContentSection />
 
-      <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-0.5 w-full"></div>
+      <GradientDivider />
 
-      <FounderSection />
-      <JourneySection />
+      {/* <FounderSection /> */}
+      <ReachSection />
 
-      <div className="flex flex-col items-center justify-center p-6 bg-black text-white shadow-md">
+      {/* <div className="flex flex-col items-center justify-center p-6 bg-black text-white shadow-md">
         <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
         <p className="text-center mb-4">
           Please feel free to reach out to us if you have any questions or want
@@ -61,22 +57,14 @@ const Home = () => {
         </p>
         <p className="text-center mb-4">Thanks for visiting!</p>
         <div className="flex flex-col items-center space-y-2">
-          <a
-            href="https://www.instagram.com/gumohh.comm/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800"
-          >
+          <NormalButton to="https://www.instagram.com/gumohh.comm/" target="_blank" rel="noopener noreferrer">
             Instagram: @gumohh.comm
-          </a>
-          <a
-            href="mailto:gumohh.com@gmail.com"
-            className="text-blue-600 hover:text-blue-800"
-          >
+          </NormalButton>
+          <NormalButton to="mailto:gumohh.com@gmail.com">
             Email: gumohh.com@gmail.com
-          </a>
+          </NormalButton>
         </div>
-      </div>
+      </div> */}
       
     </>
   );

@@ -2,11 +2,12 @@ import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
+import GradientDivider from "./OtherElements";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-pink-500 to-purple-600 h-0.5 w-full"></div>
+      <GradientDivider />
       <footer className="bg-black text-white py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -56,8 +57,8 @@ const Footer = () => {
               <Link to="/gallery" className="hover:text-gray-400">
                 Gallery
               </Link>
-              <Link to="/blogs" className="hover:text-gray-400">
-                Blogs
+              <Link to="/stories" className="hover:text-gray-400">
+                Stories
               </Link>
             </div>
           </div>

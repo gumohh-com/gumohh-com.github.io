@@ -1,7 +1,7 @@
 import React from "react";
 
 const Gallery = () => {
-  const images = Array.from({ length: 8 }, (_, i) => `/g${i + 1}.jpeg`);
+  const images = Array.from({ length: 9 }, (_, i) => `/g${i + 1}.jpeg`);
 
   return (
     <div className="bg-black p-6 gap-6 pt-25 flex flex-wrap justify-center">
