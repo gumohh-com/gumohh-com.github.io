@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NoHoverPillNormalButton } from "./CustomButtons";
 
 const destinations = [
   "Shimla",
@@ -48,7 +49,7 @@ const ContentSection = () => {
         </h5>
         <h1 className="text-white text-5xl font-semibold drop-shadow-md mt-2">
           Visit{" "}
-          <span className="text-orange-500 drop-shadow-md text-6xl">
+          <span className="text-pink-500 drop-shadow-md text-6xl">
             {currentDestination}
           </span>
         </h1>
@@ -56,12 +57,9 @@ const ContentSection = () => {
           See the world with open eyes
         </p>
 
-        <a
-          href="#book"
-          className="px-4 py-2 bg-orange-500 text-black tracking-widest font-bold rounded-md transition duration-500 hover:bg-blue-500 hover:text-white"
-        >
+        <NoHoverPillNormalButton to="/contact">
           Book Place
-        </a>
+        </NoHoverPillNormalButton>
       </div>
     </div>
   );
