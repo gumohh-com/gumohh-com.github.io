@@ -1,10 +1,10 @@
-const blogs = [
+const stories = [
   {
     id: 1,
-    title: "A Trip to Kashmir with Poornima University Students",
-    description: "Experience the serene beauty of Kashmir with the enthusiastic students of Poornima University.",
-    content: "Kashmir, often referred to as 'Paradise on Earth,' offers mesmerizing landscapes, snow-capped mountains, and a sense of tranquility. Our group trip with Poornima University students included visits to the iconic Dal Lake, the stunning Gulmarg, and the lush valleys of Pahalgam. From shikara rides to snow activities, every moment was filled with adventure and camaraderie. The students bonded over bonfires, shared meals, and unforgettable experiences, creating memories to cherish for a lifetime.",
-    image: "/g6.jpeg", // Thumbnail and banner image
+    title: "A Trip to Manali with Poornima University Students",
+    description: "Experience of the serene beauty of Manalu with the enthusiastic students of Poornima University.",
+    content: "Manali, an unmathched place with serne beauty offers mesmerizing landscapes, snow-capped mountains, and a sense of tranquility. The students of Poornima University embarked on a memorable trip to this enchanting destination. The journey was filled with laughter, adventure, and bonding moments. From exploring the local culture to indulging in thrilling activities like paragliding and river rafting, every moment was a treasure. The highlight of the trip was the visit to Solang Valley, where students experienced the thrill of snow sports and created unforgettable memories. This trip not only provided a break from academics but also strengthened friendships and fostered a sense of community among the students.",
+    image: "/g9.jpeg", // Thumbnail and banner image
   },
   {
     id: 2,
@@ -22,5 +22,5 @@ const blogs = [
   },
 ];
 
-export default blogs;
+export default stories;
   

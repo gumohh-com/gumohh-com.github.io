@@ -4,10 +4,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Blog from "./pages/Blog";
 import ScrollToTop from "./utils/ScrollToTop";
 import { Routes, Route } from "react-router";
+import Stories from "./pages/Stories";
+import Story from "./pages/Story";
 
 const App = () => {
   return (
@@ -19,8 +19,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/story/:id" element={<Story />} />
       </Routes>
       <Footer />
     </div>
