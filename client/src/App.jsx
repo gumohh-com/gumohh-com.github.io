@@ -6,12 +6,14 @@ import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Blog from "./pages/Blog";
+import ScrollToTop from "./utils/ScrollToTop";
 import { Routes, Route } from "react-router";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
