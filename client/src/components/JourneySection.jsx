@@ -1,4 +1,6 @@
 import { Link } from "react-router";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoIosCall } from "react-icons/io";
 
 const JourneySection = () => {
   return (
@@ -17,9 +19,7 @@ const JourneySection = () => {
           </div>
           <div>
             <button className="p-4 space-x-1 bg-gradient-to-r from-purple-600 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
-              <Link to="/contact">
-                BOOK A TRIP →
-              </Link>
+              <Link to="/contact">BOOK A TRIP →</Link>
             </button>
           </div>
         </div>
@@ -43,9 +43,18 @@ const JourneySection = () => {
           </a>
           <p
             href="mailto:gumohh.com@gmail.com"
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 min-w-64 mt-2"
+            className="flex justify-around items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 min-w-64 mt-2"
           >
-            +91 78499 00893
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/917849900893?text=I'm%20interested%20in%20a%20trip"
+            >
+              <FaWhatsapp />
+            </a>
+            <p>+91 78499 00893</p>
+            <a href="tel:+91-800-390-8723">
+              <IoIosCall />
+            </a>
           </p>
         </div>
 
@@ -59,9 +68,7 @@ const JourneySection = () => {
             these tales are sure to ignite your passion for adventure.
           </p>
           <button className="bg-gradient-to-r from-gray-500 to-gray-500 text-white px-6 py-3 rounded-full hover:from-green-600 hover:to-yellow-600 transition-all transform hover:scale-105">
-            <Link to="/blogs">
-              Read 👍
-            </Link>
+            <Link to="/blogs">Read 👍</Link>
           </button>
         </div>
       </div>
