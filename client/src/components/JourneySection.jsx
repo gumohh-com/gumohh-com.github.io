@@ -52,7 +52,7 @@ const JourneySection = () => {
               <FaWhatsapp />
             </a>
             <p>+91 78499 00893</p>
-            <a href="tel:+91-800-390-8723">
+            <a href="tel:+91-784-990-0893">
               <IoIosCall />
             </a>
           </p>
