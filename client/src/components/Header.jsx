@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,20 +18,10 @@ const Header = () => {
     closed: { opacity: 0, y: -20, transition: { duration: 0.2 } },
   };
 
-  const handleScroll = () => {
-    if (window.scrollY > 800) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  window.addEventListener('scroll', handleScroll);
-
   const navbarStyle = !isMenuOpen? "fixed top-0 left-0 right-0 z-50 bg-transparent" : "fixed top-0 left-0 right-0 z-50 bg-black/50";
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 ${isScrolled? "bg-black/90": (isMenuOpen? "bg-black/50" : "bg-transparent")}`}>
+    <div className="fixed top-0 left-0 right-0 z-50 bg-black/90">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex justify-around w-72 items-center">
@@ -81,10 +70,10 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/blogs"
+                to="/stories"
                 className="text-white hover:text-blue-500 font-medium"
               >
-                Blogs
+                Stories
               </Link>
             </li>
             <li>
@@ -136,11 +125,11 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/blogs"
+                    to="/stories"
                     className="block text-white hover:text-blue-500"
                     onClick={toggleMenu}
                   >
-                    Blogs
+                    Stories
                   </Link>
                 </li>
                 <li>
