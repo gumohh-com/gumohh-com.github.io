@@ -163,7 +163,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/plan-now"
+                    to="/contact"
                     className="block px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-500 text-white font-semibold rounded-lg shadow-md transition hover:from-pink-600 hover:to-purple-600"
                     onClick={toggleMenu}
                   >
