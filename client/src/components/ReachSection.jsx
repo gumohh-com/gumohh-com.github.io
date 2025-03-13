@@ -26,20 +26,20 @@ const ReachSection = () => {
 
       <div className="flex  gap-6 flex-wrap justify-center">
         {/* Travel Stories Card */}
-        <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl">
-          <h2 className="text-2xl font-bold mb-6 text-green-800">
+        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl">
+          <h2 className="text-2xl font-bold mb-6 text-blue-800">
             Travel Stories
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Whether you’re a seasoned traveller or planning your next trip,
             these tales are sure to ignite your passion for adventure.
           </p>
-          <NoHoverPillInvertedButton to="/stories">Read Here</NoHoverPillInvertedButton> {/* Changed to "/stories" */}
+          <NoHoverPillInvertedButton to="/stories">Read Here</NoHoverPillInvertedButton>
         </div>
 
         {/* Contact Support Card */}
-        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl flex flex-col items-center">
-          <h2 className="text-2xl font-bold mb-6 text-blue-800">
+        <div className="bg-gradient-to-br from-violet-50 to-cyan-50 rounded-xl shadow-xl p-20 text-center max-w-2xl min-w-80 transform transition-all hover:scale-105 hover:shadow-xl flex flex-col items-center">
+          <h2 className="text-2xl font-bold mb-6 text-violet-800">
             Contact Support
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
