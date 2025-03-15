@@ -43,7 +43,7 @@ const ReachSection = () => {
             Contact Support
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            If you have any questions, feel free to contact our support, and we
+            If you have any questions, feel free to contact our support team, and we
             will get back to you within 24 hours.
           </p>
           <a
