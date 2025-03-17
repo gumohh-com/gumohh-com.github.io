@@ -58,7 +58,7 @@ const ContentSection = () => {
         </p>
 
         <NoHoverPillNormalButton to="/contact">
-          Book Place
+          Book a place now!
         </NoHoverPillNormalButton>
       </div>
     </div>
