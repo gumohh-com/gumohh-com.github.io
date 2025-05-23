@@ -7,6 +7,7 @@ const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "", // Added phone field
     message: "",
   });
 
@@ -25,7 +26,7 @@ const Contact = () => {
     console.log("Form Data Submitted:", formData);
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ firstName: "", lastName: "", email: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
   };
 
   return (
@@ -101,6 +102,23 @@ const Contact = () => {
                 id="email"
                 name="email"
                 value={formData.email}
+                onChange={handleChange}
+                className="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="phone"
+                className="block font-medium text-gray-300 mb-1"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-600 rounded-lg bg-gray-700 text-gray-200 focus:ring-2 focus:ring-blue-500"
                 required
