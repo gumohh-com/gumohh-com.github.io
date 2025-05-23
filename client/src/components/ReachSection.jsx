@@ -80,7 +80,7 @@ const ReachSection = () => {
             We post regular updates and sneak peeks into our onging trips on our social media channels. Stay connected with us through the channels below.
           </p>
           <a
-            href="https://www.instagram.com/gumohh.comm/"
+            href="https://www.instagram.com/gumohh_traveltech/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-pink-500 to-red-600 text-white px-6 py-3 rounded-full inline-block hover:from-pink-600 hover:to-red-700 transition-all transform hover:scale-105 min-w-64"
