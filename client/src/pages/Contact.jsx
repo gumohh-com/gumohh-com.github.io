@@ -41,6 +41,10 @@ const Contact = () => {
           <h1 className="text-3xl font-bold text-center text-white mb-6">
             Contact Us
           </h1>
+          <div className="text-gray-400 text-sm text-center mb-6">
+            <p>This contact form is only for inquiring about our services.</p>
+            <p>For job opportunities, please visit our <a href="https://www.linkedin.com/company/gumohh-travel-tech/" className="text-blue-400 hover:text-blue-300">LinkedIn page</a>.</p>
+          </div>
           {submitted && (
             <motion.p
               initial={{ opacity: 0 }}
