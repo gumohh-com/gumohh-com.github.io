@@ -37,7 +37,7 @@ const Footer = () => {
                 <FaXTwitter size={24} />
               </a>
               <a
-                href="https://www.instagram.com/gumohh_traveltech/"
+                href="https://www.instagram.com/gumohh_traveltech_pvt.ltd/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
